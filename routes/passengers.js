@@ -4,5 +4,5 @@ const controller = require('../controllers/passengers')
 const router = express.Router()
 
 router.get('/:qFind', controller.find)
-router.get('/passengers', controller.passengers)
+router.get('/passengers', controller.list)
 module.exports = router

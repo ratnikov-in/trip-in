@@ -5,7 +5,7 @@ const router = express.Router()
 
 router.get('/:idTrip', controller.view)
 router.post('/create', controller.create)
-router.post('/update', controller.update)
-router.delete('/remove', controller.remove)
+router.patch('/:idTrip', controller.update)
+router.delete('/:idTrip', controller.remove)
 
 module.exports = router
