@@ -14,6 +14,14 @@ const usersSchema = new Schema({
     type: String,
     default: ''
   },
+  fullName: {
+    type: [String],
+    required: true
+  },
+  create: {
+    type: Date,
+    default: Date.now
+  },
   phone: {
     type: String,
     default: ''

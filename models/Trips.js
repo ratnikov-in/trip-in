@@ -11,7 +11,12 @@ const tripsSchema = new Schema({
   },
   when: {
     type: Date,
+    default: Date.now,
     required: true
+  },
+  create: {
+    type: Date,
+    default: Date.now
   },
   driver: {
     ref: 'users',

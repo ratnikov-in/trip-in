@@ -12,6 +12,10 @@ const ratingsSchema = new Schema({
   rating: {
     type: Number,
     default: 5
+  },
+  create: {
+    type: Date,
+    default: Date.now
   }
 })
 module.exports = mongoose.model('ratings', ratingsSchema())
