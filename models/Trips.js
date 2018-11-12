@@ -1,6 +1,11 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const tripsSchema = new Schema({
+  status: {
+    type: Number,
+    required: true,
+    default: 10
+  },
   from: {
     type: String,
     required: true

@@ -23,7 +23,7 @@ const usersSchema = new Schema({
     default: Date.now
   },
   phone: {
-    type: String,
+    type: Number,
     default: ''
   },
   biography: {
