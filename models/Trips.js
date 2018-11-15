@@ -5,7 +5,7 @@ const tripsSchema = new Schema({
     type: Number,
     required: true,
     default: 10
-    },
+  },
   from: {
     type: String,
     required: true
@@ -37,6 +37,6 @@ const tripsSchema = new Schema({
     ref: 'users',
     type: Schema.Types.ObjectId,
     required: true
-    }
+  }
 })
 module.exports = mongoose.model('trips', tripsSchema())

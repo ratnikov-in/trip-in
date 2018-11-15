@@ -22,7 +22,7 @@ const usersSchema = new Schema({
     type: Date,
     default: Date.now
   },
-    phone: {
+  phone: {
     type: Number,
     default: ''
   },
